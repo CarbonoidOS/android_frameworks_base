@@ -4431,6 +4431,16 @@ public final class Settings {
          */
         public static final String RECENTS_ICON_PACK = "recents_icon_pack";
 
+        /*
+         * Face auto unlock
+         * @hide
+         */
+        public static final String FACE_AUTO_UNLOCK = "face_auto_unlock";
+
+         /** @hide */
+        public static final Validator FACE_AUTO_UNLOCK_VALIDATOR =
+                BOOLEAN_VALIDATOR;
+
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
@@ -4608,6 +4618,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(QS_LAYOUT_COLUMNS);
             PRIVATE_SETTINGS.add(QS_LAYOUT_COLUMNS_LANDSCAPE);
             PRIVATE_SETTINGS.add(QS_TILE_HIDE_TITLE);
+            PRIVATE_SETTINGS.add(FACE_AUTO_UNLOCK);
         }
 
         /**
@@ -4697,6 +4708,7 @@ public final class Settings {
             VALIDATORS.put(WIFI_STATIC_DNS2, WIFI_STATIC_DNS2_VALIDATOR);
             VALIDATORS.put(SHOW_BATTERY_PERCENT, SHOW_BATTERY_PERCENT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE, BOOLEAN_VALIDATOR);
+            VALIDATORS.put(FACE_AUTO_UNLOCK, FACE_AUTO_UNLOCK_VALIDATOR);
         }
 
         /**
